@@ -1,9 +1,12 @@
 package com.github.eyce9000.spark.bes.relevance;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Relevance {
+	
 	static public String getCleanedQuery(String query){
 		char[] cleanBuffer = query.toCharArray();
 		//Find locations of strings

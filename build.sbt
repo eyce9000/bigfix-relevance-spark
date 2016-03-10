@@ -1,5 +1,5 @@
 name := "bigfix-spark"
-version := "1.0"
+version := "1.1.0"
 scalaVersion := "2.10.6"
 scalacOptions += "-target:jvm-1.7"
 javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
@@ -9,7 +9,8 @@ sparkVersion := "1.5.2"
 libraryDependencies ++= {
   Seq(
     "org.apache.spark"    %%  "spark-core"    %  sparkVersion.value % "provided",
-    "org.apache.spark"    %%  "spark-sql"   %  sparkVersion.value % "provided"
+    "org.apache.spark"    %%  "spark-sql"   %  sparkVersion.value % "provided" ,
+    "org.slf4j" % "slf4j-api" % "1.7.10"
   )
 }
 

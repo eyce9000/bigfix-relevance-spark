@@ -83,5 +83,4 @@ class BigfixAPI(val config:BigfixConfig){
     case ClientType.RESTAPI => {queryRESTAPI(Relevance.getCleanedQuery(rawQuery))}
     case ClientType.Webreports => {queryWebreports(Relevance.getCleanedQuery(rawQuery))}
   }
-  
 }
